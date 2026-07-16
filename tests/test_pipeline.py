@@ -22,6 +22,8 @@ class PipelineTests(unittest.TestCase):
         result = self.pipeline.run("When should medication reconciliation be completed?")
         self.assertIn(result["prediction"], ["medication-policy","triage-policy","privacy-policy"])
         self.assertGreaterEqual(len(result["evidence"]), 1)
+        evidence_ids = [item["id"] for item in result["evidence"]]
+        self.assertEqual(len(evidence_ids), len(set(evidence_ids)))
         self.assertIn("requires_review", result)
 
 

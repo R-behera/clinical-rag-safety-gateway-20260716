@@ -24,23 +24,22 @@ def read_jsonl(path: Path) -> list[dict]:
 
 def train(records: list[dict], base_model: dict) -> dict:
     prototypes: dict[str, Counter] = defaultdict(Counter)
-    documents = []
+    documents_by_id = {}
     for record in records:
         prototypes[record["label"]].update(
             tokenize(f'{record["input"]} {record["context"]}')
         )
-        documents.append(
-            {
-                "id": record["source"],
-                "label": record["label"],
-                "text": record["context"],
-                "metadata": {
-                    "synthetic": True,
-                    "domain": base_model["domain"],
-                },
-            }
-        )
+        documents_by_id[record["source"]] = {
+            "id": record["source"],
+            "label": record["label"],
+            "text": record["context"],
+            "metadata": {
+                "synthetic": True,
+                "domain": base_model["domain"],
+            },
+        }
 
+    documents = list(documents_by_id.values())
     document_frequency = Counter()
     for document in documents:
         document_frequency.update(set(tokenize(document["text"])))

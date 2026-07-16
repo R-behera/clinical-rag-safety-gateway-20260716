@@ -120,62 +120,62 @@
     }
   },
   "idf": {
-    "complete": 2.321756,
-    "medication": 1.916291,
-    "reconciliation": 2.321756,
-    "during": 2.321756,
-    "admission": 2.321756,
-    "transfer": 2.321756,
-    "and": 1.310155,
-    "discharge": 2.321756,
-    "high": 2.609438,
-    "risk": 2.609438,
-    "changes": 2.609438,
-    "require": 2.098612,
-    "pharmacist": 2.609438,
-    "review": 2.609438,
-    "before": 2.609438,
-    "release": 2.609438,
-    "urgent": 2.609438,
-    "or": 2.098612,
-    "life": 2.609438,
-    "threatening": 2.609438,
-    "symptoms": 2.609438,
-    "immediate": 2.609438,
-    "escalation": 2.609438,
-    "to": 2.098612,
-    "qualified": 2.098612,
-    "clinical": 2.609438,
-    "staff": 2.609438,
-    "the": 1.916291,
-    "assistant": 2.609438,
-    "must": 2.609438,
-    "abstain": 2.609438,
-    "from": 2.609438,
-    "diagnosis": 2.609438,
-    "direct": 2.609438,
-    "user": 2.609438,
-    "a": 2.609438,
-    "clinician": 2.609438,
-    "use": 1.916291,
-    "minimum": 2.321756,
-    "necessary": 2.321756,
-    "patient": 2.321756,
-    "information": 2.321756,
-    "never": 2.321756,
-    "place": 2.321756,
-    "identifiers": 2.321756,
-    "in": 2.321756,
-    "public": 2.321756,
-    "logs": 2.321756,
-    "synthetic": 2.609438,
-    "properly": 2.609438,
-    "de": 2.609438,
-    "identified": 2.609438,
-    "records": 2.609438,
-    "for": 2.609438,
-    "testing": 2.609438,
-    "evaluation": 2.609438
+    "complete": 2.252763,
+    "medication": 1.847298,
+    "reconciliation": 2.252763,
+    "during": 2.252763,
+    "admission": 2.252763,
+    "transfer": 2.252763,
+    "and": 1.336472,
+    "discharge": 2.252763,
+    "high": 2.252763,
+    "risk": 2.252763,
+    "changes": 2.252763,
+    "require": 1.847298,
+    "pharmacist": 2.252763,
+    "review": 2.252763,
+    "before": 2.252763,
+    "release": 2.252763,
+    "urgent": 2.252763,
+    "or": 1.847298,
+    "life": 2.252763,
+    "threatening": 2.252763,
+    "symptoms": 2.252763,
+    "immediate": 2.252763,
+    "escalation": 2.252763,
+    "to": 1.847298,
+    "qualified": 1.847298,
+    "clinical": 2.252763,
+    "staff": 2.252763,
+    "the": 1.847298,
+    "assistant": 2.252763,
+    "must": 2.252763,
+    "abstain": 2.252763,
+    "from": 2.252763,
+    "diagnosis": 2.252763,
+    "direct": 2.252763,
+    "user": 2.252763,
+    "a": 2.252763,
+    "clinician": 2.252763,
+    "use": 1.847298,
+    "minimum": 2.252763,
+    "necessary": 2.252763,
+    "patient": 2.252763,
+    "information": 2.252763,
+    "never": 2.252763,
+    "place": 2.252763,
+    "identifiers": 2.252763,
+    "in": 2.252763,
+    "public": 2.252763,
+    "logs": 2.252763,
+    "synthetic": 2.252763,
+    "properly": 2.252763,
+    "de": 2.252763,
+    "identified": 2.252763,
+    "records": 2.252763,
+    "for": 2.252763,
+    "testing": 2.252763,
+    "evaluation": 2.252763
   },
   "documents": [
     {
@@ -188,45 +188,9 @@
       }
     },
     {
-      "id": "med-policy-01",
-      "label": "medication-policy",
-      "text": "Complete medication reconciliation during admission, transfer, and discharge.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "med-policy-01",
-      "label": "medication-policy",
-      "text": "Complete medication reconciliation during admission, transfer, and discharge.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
       "id": "med-policy-02",
       "label": "medication-policy",
       "text": "High-risk medication changes require pharmacist review before release.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "med-policy-02",
-      "label": "medication-policy",
-      "text": "High-risk medication changes require pharmacist review before release.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "triage-01",
-      "label": "triage-policy",
-      "text": "Urgent or life-threatening symptoms require immediate escalation to qualified clinical staff.",
       "metadata": {
         "synthetic": true,
         "domain": "healthcare-ai"
@@ -251,45 +215,9 @@
       }
     },
     {
-      "id": "triage-02",
-      "label": "triage-policy",
-      "text": "The assistant must abstain from diagnosis and direct the user to a qualified clinician.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
       "id": "privacy-01",
       "label": "privacy-policy",
       "text": "Use the minimum necessary patient information and never place identifiers in public logs.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "privacy-01",
-      "label": "privacy-policy",
-      "text": "Use the minimum necessary patient information and never place identifiers in public logs.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "privacy-01",
-      "label": "privacy-policy",
-      "text": "Use the minimum necessary patient information and never place identifiers in public logs.",
-      "metadata": {
-        "synthetic": true,
-        "domain": "healthcare-ai"
-      }
-    },
-    {
-      "id": "privacy-02",
-      "label": "privacy-policy",
-      "text": "Use synthetic or properly de-identified records for testing and evaluation.",
       "metadata": {
         "synthetic": true,
         "domain": "healthcare-ai"
