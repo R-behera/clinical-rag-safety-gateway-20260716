@@ -8,6 +8,10 @@ tags:
 - synthetic-data
 - transparent-baseline
 - healthcare-ai
+- question-answering
+- sentence-similarity
+- text-classification
+- summarization
 metrics:
 - accuracy
 ---
@@ -35,6 +39,13 @@ does not call a hosted LLM.
 - CI and evaluation examples
 - Local baseline comparisons
 - Educational experimentation
+
+## Hugging Face Task Coverage
+
+- `question-answering`
+- `sentence-similarity`
+- `text-classification`
+- `summarization`
 
 ## Limitations and Risks
 

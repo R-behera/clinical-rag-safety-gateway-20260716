@@ -8,13 +8,17 @@ Clinical assistants need retrieval, source attribution, and explicit abstention 
 
 ```mermaid
 flowchart LR
-    A["Input event or query"] --> B["Validation and normalization"]
-    B --> C["Policy document ingestion"]
-    C --> D["Hybrid token retrieval"]
-    D --> E["Evidence sufficiency gate"]
-    E --> F["Abstention and escalation policy"]
-    F --> G["Citation and safety evaluation"]
-    G --> H["Prediction, evidence, and review signal"]
+    A["Real-world API or event stream"] --> B["Validated ingestion"]
+    B --> C["Versioned raw and curated data"]
+    C --> D["Policy document ingestion"]
+    D --> E["Hybrid token retrieval"]
+    E --> F["Evidence sufficiency gate"]
+    F --> G["Abstention and escalation policy"]
+    G --> H["Citation and safety evaluation"]
+    H --> I["Prediction, evidence, and review signal"]
+    I --> J["Evaluation and release gate"]
+    I --> K["OpenTelemetry traces and service metrics"]
+    J --> L["Model and dataset registry"]
 ```
 
 ## Components
@@ -24,6 +28,22 @@ flowchart LR
 - **Evidence sufficiency gate**
 - **Abstention and escalation policy**
 - **Citation and safety evaluation**
+
+## Recommended Production Stack
+
+- FastAPI for typed service endpoints
+- LangGraph for durable safety and escalation workflows
+- LlamaIndex for ingestion and retrieval abstractions
+- PostgreSQL plus pgvector for filtered vector search
+- Redis for caching and rate limiting
+- OpenTelemetry plus Phoenix for traces and evaluation
+
+## Hugging Face Tasks
+
+- `question-answering`
+- `sentence-similarity`
+- `text-classification`
+- `summarization`
 
 ## Model Architecture
 

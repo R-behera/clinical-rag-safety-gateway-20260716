@@ -1,0 +1,52 @@
+{
+  "name": "Clinical RAG Safety Gateway",
+  "problem": "Clinical assistants need retrieval, source attribution, and explicit abstention before answers reach care teams.",
+  "domain": "healthcare-ai",
+  "architecture": "retrieval",
+  "hugging_face_tasks": [
+    "question-answering",
+    "sentence-similarity",
+    "text-classification",
+    "summarization"
+  ],
+  "recommended_stack": [
+    "FastAPI for typed service endpoints",
+    "LangGraph for durable safety and escalation workflows",
+    "LlamaIndex for ingestion and retrieval abstractions",
+    "PostgreSQL plus pgvector for filtered vector search",
+    "Redis for caching and rate limiting",
+    "OpenTelemetry plus Phoenix for traces and evaluation"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "ClinicalTrials.gov API v2",
+      "url": "https://clinicaltrials.gov/api/v2/studies?pageSize=5",
+      "purpose": "Public study metadata for retrieval and citation tests"
+    },
+    {
+      "name": "openFDA drug labels",
+      "url": "https://api.fda.gov/drug/label.json?limit=5",
+      "purpose": "Public drug-label text for safety-oriented ingestion"
+    }
+  ],
+  "job_description_skills": [
+    "Production RAG design and retrieval evaluation",
+    "Healthcare AI safety, abstention, and auditability",
+    "Vector databases and metadata-aware retrieval",
+    "Agent orchestration with human review",
+    "LLMOps tracing, regression tests, and release gates"
+  ],
+  "impact_targets": [
+    "Reach Recall@5 >= 0.85 on a reviewed retrieval set",
+    "Maintain 100% citation coverage for non-abstained answers",
+    "Block 100% of diagnosis or emergency-advice test prompts",
+    "Keep p95 retrieval latency below 300 ms at 50 requests/second"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}

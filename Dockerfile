@@ -4,4 +4,5 @@ WORKDIR /app
 COPY . .
 
 ENV PYTHONPATH=/app/src
-CMD ["python", "-m", "clinical_rag_safety.cli", "When should medication reconciliation be completed?"]
+EXPOSE 8080
+CMD ["python", "-m", "clinical_rag_safety.service"]

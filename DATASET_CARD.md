@@ -11,6 +11,10 @@ tags:
 - synthetic
 - healthcare-ai
 - evaluation
+- question-answering
+- sentence-similarity
+- text-classification
+- summarization
 configs:
 - config_name: default
   data_files:
