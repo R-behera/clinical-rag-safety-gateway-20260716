@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-rag-safety-gateway-20260716"
+version = "0.1.0"
+description = "A citation-first healthcare RAG gateway with abstention, evidence checks, and synthetic clinical policy data."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "R-behera" }]
+dependencies = []
+
+[project.scripts]
+clinical-rag-safety-gateway-20260716 = "clinical_rag_safety.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
